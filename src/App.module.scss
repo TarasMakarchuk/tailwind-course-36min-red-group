@@ -1,0 +1,11 @@
+.parent {
+  @apply border border-red-500 rounded-md m-8 h-32 w-full;
+}
+
+.header {
+  @apply text-xl font-semibold text-center text-gray-500;
+}
+
+.button {
+  @apply mt-10 bg-green-500 bg-opacity-50 block mx-auto py-2 px-14 rounded-xl md:bg-purple-500 dark:bg-red-600;
+}

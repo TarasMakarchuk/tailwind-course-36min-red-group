@@ -1,8 +1,10 @@
+import styles from "./App.module.scss";
+
 function App() {
   return (
-    <div className="border border-red-500 rounded-md m-8">
-      <h1 className="text-3xl font-bold"> Hello </h1>
-      <button>Login</button>
+    <div className={styles.parent}>
+      <h1 className={styles.header}>Hello</h1>
+      <button className={styles.button}>Login</button>
     </div>
   );
 }
