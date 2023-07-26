@@ -25,7 +25,7 @@ function App() {
           Login
         </button>
 
-        {isOpen && <button className="animate-fade">Test</button>}
+        {isOpen && <button className="animate-fade">Test1</button>}
       </div>
     </div>
   );
