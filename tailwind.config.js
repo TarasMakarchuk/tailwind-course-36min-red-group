@@ -48,7 +48,12 @@ module.exports = {
             backgroundColor: theme("colors.orange.600"),
           },
         },
-      });
+      }),
+        addUtilities({
+          ".text-shadow": {
+            textShadow: "1px 1px rgba(0, 0, 0, 0.4)",
+          },
+        });
     }),
   ],
 };
