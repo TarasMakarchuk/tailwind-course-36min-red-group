@@ -4,6 +4,7 @@ import styles from "./App.module.scss";
 function App() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className={styles.parent}>
@@ -20,7 +21,11 @@ function App() {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <button className={styles.button}>Login</button>
+        <button className={styles.button} onClick={() => setIsOpen(!isOpen)}>
+          Login
+        </button>
+
+        {isOpen && <button className="animate-fade">Test</button>}
       </div>
     </div>
   );
