@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -29,5 +31,24 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    plugin(({ addComponents, theme, addUtilities }) => {
+      addComponents({
+        ".btn-primary": {
+          backgroundColor: theme("colors.orange.500"),
+          color: "white",
+          padding: "10px 0",
+          display: "block",
+          width: "100%",
+          fontSize: 14,
+          fontWeight: "bold",
+
+          "&:hover": {
+            backgroundColor: theme("colors.orange.600"),
+          },
+        },
+      });
+    }),
+  ],
 };

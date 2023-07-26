@@ -15,8 +15,7 @@
     }
 
     .button {
-      @apply bg-orange-500 text-white block py-2.5 w-full transition-colors
-     hover:bg-orange-600 font-bold text-lg;
+      @apply btn-primary transition-colors;
     }
   }
 }
