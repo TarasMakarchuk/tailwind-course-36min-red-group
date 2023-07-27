@@ -15,12 +15,13 @@ function App() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+        <hr />
         <input
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-
+        <hr />
         <button className={styles.button} onClick={() => setIsOpen(!isOpen)}>
           Login
         </button>
