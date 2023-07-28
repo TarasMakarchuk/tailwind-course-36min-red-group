@@ -2,9 +2,9 @@ import { useState } from "react";
 import styles from "./App.module.scss";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className={styles.parent}>
