@@ -11,8 +11,8 @@ function App() {
       <h1 className={styles.header}>Hello</h1>
       <div>
         <input
-          placeholder="Email"
           value={email}
+          placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
         />
         <hr />
