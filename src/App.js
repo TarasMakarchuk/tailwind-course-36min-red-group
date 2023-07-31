@@ -17,8 +17,8 @@ function App() {
         />
         <hr />
         <input
-          placeholder="Password"
           value={password}
+          placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}
         />
         <hr />
